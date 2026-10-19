@@ -4,8 +4,8 @@ Type: CWE-94 — JavaScript expression injection
 Impact: type: javascript requirement bypass (confirmed)
 CVSS 3.1: AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:N → 6.5 Medium
 
-# Root cause
-JavascriptRequirement.java:
+## Root cause
+### JavascriptRequirement.java:
 
 String exp = holder.setPlaceholdersAndArguments(expression);
 Object result = engine.getEngineByName("JavaScript").eval(exp);
