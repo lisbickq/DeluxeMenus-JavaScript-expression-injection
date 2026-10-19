@@ -1,0 +1,21 @@
+menu_title: "JavaScript Injection PoC T.ME/SOBAKASQUAD"
+open_command: pocjs
+register_command: true
+args:
+  - value
+size: 9
+
+items:
+  test:
+    material: PAPER
+    slot: 4
+    display_name: "&eJavaScript PoC T.ME/SOBAKASQUAD"
+    left_click_requirement:
+      requirements:
+        test:
+          type: javascript
+          expression: "'{value}' == 'safe'"
+      deny_commands:
+        - "[message] REQUIREMENT_DENIED"
+    left_click_commands:
+      - "[message] REQUIREMENT_PASSED"
